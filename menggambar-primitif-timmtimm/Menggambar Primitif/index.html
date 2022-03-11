@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggambar Primitif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Titik</h1>
+    <div class="content">
+        <canvas id="myCanvas_titik">
+        </canvas>
+    </div>
+    <script src="./titik.js"></script>
+
+    <h1>3 Titik</h1>
+    <div class="content">
+        <canvas id="myCanvas_tiga_titik">
+        </canvas>
+        <script id="vertexShaderCode_tiga_titik" type="notjs">
+            attribute vec2 a_position;
+            void main()
+            {
+              gl_Position = vec4(a_position, 0.0, 1.0);
+              gl_PointSize = 10.0;
+            }
+          </script>
+          <script id="fragmentShaderCode_tiga_titik" type="notjs">
+            void main()
+            {
+              gl_FragColor = vec4(0.0, 0.5, 0.5, 1.0);
+            }
+          </script>
+    </div>
+    <script src="./tiga_titik.js"></script>
+
+    <h1>Segitiga</h1>
+    <div class="content">
+        <canvas id="myCanvas_segitiga">
+        </canvas>
+        <script id="fragmentShaderCode_segitiga" type="notjs">
+            void main()
+            {
+                gl_FragColor = vec4(0.0, 0.5, 0.5, 1.0);
+            }
+        </script>
+        <script id="vertexShaderCode_segitiga" type="notjs">
+            attribute vec2 a_Position;
+            void main()
+            {
+                gl_Position = vec4(a_Position, 0.0, 1.0);
+                gl_PointSize = 10.0;
+            }
+        </script>
+    </div>
+    <script src="./segitiga.js"></script>
+
+    <h1>Kotak</h1>
+    <div class="content">
+        <canvas id="myCanvas_kotak">
+        </canvas>
+        <script id="fragmentShaderCode_kotak" type="notjs">
+            void main()
+            {
+                gl_FragColor = vec4(0.0, 0.5, 0.5, 1.0);
+            }
+        </script>
+        <script id="vertexShaderCode_kotak" type="notjs">
+            attribute vec2 a_Position;
+            void main()
+            {
+                gl_Position = vec4(a_Position, 0.0, 1.0);
+                gl_PointSize = 10.0;
+            }
+        </script>
+    </div>
+    <script src="./kotak.js"></script>
+</body>
+
+</html>

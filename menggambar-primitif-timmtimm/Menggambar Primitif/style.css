@@ -1,0 +1,20 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas
+{
+    width: 750px;
+    height: 500px;
+    border: 1px solid black;
+}

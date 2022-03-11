@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+html
+{
+    margin: 0;
+    height: 100%;
+}
+
+#myCanvas
+{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+} 
+
+body
+{
+    background-color: #35363A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#info
+{
+    color: white;
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Lora', serif;
+    text-align: center;
+}
